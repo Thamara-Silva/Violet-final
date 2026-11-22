@@ -1,0 +1,8 @@
+Importar o banco de dados:
+cmd /c 'mysql -u root -p -P 3306 < "E:\Violet\backend2ds\banco.sql"'
+
+Abrir a pasta da API:
+cd "E:\Violet\backend2ds\publish"
+
+Executar a API:
+.\backend2ds.exe

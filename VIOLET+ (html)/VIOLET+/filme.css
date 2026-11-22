@@ -1,0 +1,296 @@
+/* ============================================
+   VIOLET+ — PÁGINA DE DETALHES DO FILME
+   ============================================ */
+
+/* Estilo geral da página. */
+body {
+  padding-bottom: 100px;
+}
+
+.filme-container {
+  width: min(1100px, 92%);
+  margin: 40px auto 60px;
+}
+
+.carregando {
+  color: var(--texto-suave);
+  text-align: center;
+  padding: 60px 0;
+}
+
+/* ---------- Header interno ---------- */
+
+.header .voltar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--texto-suave);
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.header .voltar:hover {
+  color: var(--roxo-claro);
+}
+
+.header .voltar svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ---------- Cartão principal ---------- */
+
+/* Organiza o pôster e as informações do filme. */
+.filme-card {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 35px;
+  padding: 32px;
+  background: linear-gradient(150deg, #21112f, #100b19);
+  border: 1px solid #382044;
+  border-radius: 20px;
+}
+
+.filme-poster {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  background: #22162f;
+  box-shadow: 0 15px 40px #0008;
+}
+
+/* ---------- Coluna de informações ---------- */
+
+.filme-info {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.filme-etiqueta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-start;
+  padding: 6px 10px;
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid rgba(192, 132, 252, 0.35);
+  border-radius: 8px;
+  color: var(--roxo-claro);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.filme-etiqueta svg {
+  width: 13px;
+  height: 13px;
+}
+
+.filme-titulo {
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(1.9rem, 3.4vw, 2.8rem);
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.filme-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--texto-suave);
+  font-size: 0.85rem;
+}
+
+.filme-meta span + span::before {
+  content: "•";
+  margin-right: 10px;
+  color: var(--roxo);
+}
+
+.filme-linha {
+  width: 48px;
+  height: 3px;
+  background: var(--roxo);
+  border-radius: 3px;
+}
+
+.filme-sinopse {
+  color: #d0c7dc;
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+/* ---------- Sessões ---------- */
+
+.filme-secao-titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0 6px;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.filme-secao-titulo svg {
+  color: var(--roxo-claro);
+  width: 20px;
+  height: 20px;
+}
+
+.sessoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sessao {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  background: #1a1225;
+  border: 1px solid #382449;
+  border-radius: 12px;
+  color: var(--texto);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+}
+
+.sessao:hover {
+  background: #241830;
+  border-color: #5a3d75;
+}
+
+.sessao.selecionada {
+  background: var(--roxo-claro);
+  border-color: var(--roxo-claro);
+  color: #180e23;
+}
+
+.sessao svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ---------- Aviso ---------- */
+
+.filme-aviso {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--texto-suave);
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.filme-aviso svg {
+  width: 15px;
+  height: 15px;
+  color: var(--roxo-claro);
+  flex-shrink: 0;
+}
+
+/* ---------- CTA ---------- */
+
+.filme-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 8px;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 30px;
+  background: var(--roxo);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s, opacity 0.2s;
+}
+
+.filme-cta:hover:not(:disabled) {
+  background: #c477ff;
+  transform: translateY(-2px);
+}
+
+.filme-cta:disabled {
+  background: #3a2b4a;
+  color: #7a6b8a;
+  cursor: not-allowed;
+}
+
+.filme-cta svg {
+  width: 19px;
+  height: 19px;
+}
+
+/* ---------- Filme não encontrado ---------- */
+
+.nao-encontrado {
+  text-align: center;
+  padding: 60px 24px;
+  background: var(--superficie);
+  border: 1px solid #382044;
+  border-radius: 18px;
+}
+
+.nao-encontrado svg {
+  width: 55px;
+  height: 55px;
+  color: var(--roxo-claro);
+  margin-bottom: 18px;
+}
+
+.nao-encontrado h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.nao-encontrado p {
+  color: var(--texto-suave);
+  margin-bottom: 22px;
+}
+
+/* ---------- Responsivo ---------- */
+
+/* Ajusta o layout para telas de tamanhos diferentes. */
+@media (max-width: 800px) {
+  .filme-card {
+    grid-template-columns: 1fr;
+    padding: 22px;
+    gap: 24px;
+  }
+
+  .filme-poster {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .filme-container {
+    margin: 25px auto 40px;
+  }
+
+  .header {
+    padding: 14px 18px;
+  }
+
+  .filme-card {
+    border-radius: 16px;
+    padding: 18px;
+  }
+
+  .filme-sinopse {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,244 @@
+/* ============================================
+   VIOLET+ — PÁGINA DE CONFIRMAÇÃO DE PEDIDO
+   ============================================ */
+
+/* Estilo geral da página. */
+body {
+  padding-bottom: 100px;
+}
+
+.sucesso-container {
+  width: min(520px, 92%);
+  margin: 50px auto 60px;
+}
+
+.carregando {
+  color: var(--texto-suave);
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* ---------- Card ---------- */
+
+/* Cartão com a confirmação do pedido. */
+.sucesso-card {
+  background: linear-gradient(150deg, #21112f, #100b19);
+  border: 1px solid #382044;
+  border-radius: 22px;
+  padding: 36px 28px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+/* ---------- Ícone de check ---------- */
+
+.check-circulo {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: rgba(139, 92, 246, 0.18);
+  border: 2px solid rgba(192, 132, 252, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: aparecer 0.5s ease-out;
+}
+
+.check-circulo svg {
+  width: 44px;
+  height: 44px;
+  color: var(--roxo-claro);
+  stroke-width: 2.4;
+}
+
+@keyframes aparecer {
+  from {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ---------- Textos ---------- */
+
+.sucesso-subtitulo {
+  color: var(--roxo-claro);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.sucesso-titulo {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.sucesso-descricao {
+  color: var(--texto-suave);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 380px;
+}
+
+/* ---------- Resumo ---------- */
+
+.sucesso-resumo {
+  width: 100%;
+  background: #1a1225;
+  border: 1px solid #382449;
+  border-radius: 14px;
+  padding: 16px;
+  margin-top: 8px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sucesso-linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 0.88rem;
+}
+
+.sucesso-linha span:first-child {
+  color: var(--texto-suave);
+  flex-shrink: 0;
+}
+
+.sucesso-linha span:last-child {
+  color: var(--texto);
+  font-weight: 600;
+  text-align: right;
+}
+
+.sucesso-linha.total {
+  padding-top: 12px;
+  border-top: 1px solid #382044;
+  margin-top: 4px;
+}
+
+.sucesso-linha.total span:first-child {
+  color: var(--roxo-claro);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.sucesso-linha.total span:last-child {
+  color: var(--roxo-claro);
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+}
+
+/* ---------- Botões ---------- */
+
+.sucesso-acoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.sucesso-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 20px;
+  border-radius: 30px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s, border-color 0.2s;
+  border: none;
+}
+
+.sucesso-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.sucesso-btn.primario {
+  background: var(--roxo);
+  color: #fff;
+}
+
+.sucesso-btn.primario:hover {
+  background: #c477ff;
+  transform: translateY(-2px);
+}
+
+.sucesso-btn.secundario {
+  background: transparent;
+  border: 1px solid #382449;
+  color: var(--roxo-claro);
+}
+
+.sucesso-btn.secundario:hover {
+  background: #2a1b3d;
+  border-color: #5a3d75;
+}
+
+/* ---------- Erro ---------- */
+
+.erro {
+  text-align: center;
+  padding: 50px 24px;
+  background: var(--superficie);
+  border: 1px solid #382044;
+  border-radius: 18px;
+}
+
+.erro h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.erro p {
+  color: var(--texto-suave);
+  margin-bottom: 22px;
+}
+
+/* ---------- Responsivo ---------- */
+
+/* Ajusta o layout para telas de tamanhos diferentes. */
+@media (max-width: 600px) {
+  .sucesso-container {
+    margin: 30px auto 40px;
+  }
+
+  .sucesso-card {
+    padding: 26px 18px;
+    border-radius: 18px;
+  }
+
+  .check-circulo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .check-circulo svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .sucesso-titulo {
+    font-size: 1.6rem;
+  }
+}

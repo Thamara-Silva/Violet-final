@@ -1,0 +1,464 @@
+/* ============================================
+   CARRINHO — ESTILO VIOLET+
+   ============================================ */
+
+/* Cabeçalho interno (reaproveita .header global) */
+.header .voltar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--texto-suave);
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.header .voltar:hover {
+    color: var(--roxo-claro);
+}
+
+.header .voltar svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* ---------- Container principal ---------- */
+
+.carrinho-container {
+    width: min(1100px, 92%);
+    margin: 40px auto 60px;
+}
+
+/* ---------- Título da página ---------- */
+
+.titulo-pagina {
+    margin-bottom: 35px;
+}
+
+.titulo-pagina h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 8px 0 10px;
+}
+
+.titulo-pagina h1 span {
+    color: var(--roxo-claro);
+}
+
+.titulo-pagina p {
+    color: var(--texto-suave);
+    font-size: 0.95rem;
+}
+
+/* ---------- Layout duas colunas ---------- */
+
+/* Organiza a lista de ingressos e o resumo da compra. */
+.carrinho-layout {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+/* ---------- Lista de ingressos ---------- */
+
+.lista-carrinho {
+    background: var(--superficie);
+    border: 1px solid #382044;
+    border-radius: 18px;
+    padding: 26px;
+}
+
+.lista-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #281638;
+}
+
+.lista-header h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.lista-header span {
+    color: var(--texto-suave);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* ---------- Cada item do carrinho ---------- */
+
+.item-carrinho {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid #281638;
+}
+
+.item-carrinho:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.item-carrinho > img {
+    width: 80px;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background: #22162f;
+}
+
+.item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+}
+
+.item-info h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.item-info > p {
+    color: var(--texto-suave);
+    font-size: 0.82rem;
+}
+
+.item-preco {
+    color: var(--roxo-claro);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+/* ---------- Ações do item ---------- */
+
+.item-acoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+.quantidade {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    border: 1px solid #382449;
+    border-radius: 30px;
+    padding: 3px;
+    background: #1a1225;
+}
+
+.quantidade button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    color: var(--roxo-claro);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.quantidade button:hover {
+    background: #2a1b3d;
+}
+
+.quantidade button svg {
+    width: 15px;
+    height: 15px;
+}
+
+.quantidade span {
+    min-width: 26px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.remover {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 12px;
+    border: 1px solid #4a2a3a;
+    border-radius: 30px;
+    background: transparent;
+    color: #d97a9a;
+    font-size: 0.78rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.remover:hover {
+    background: #2a1520;
+    color: #ff9ab8;
+}
+
+.remover svg {
+    width: 14px;
+    height: 14px;
+}
+
+/* ---------- Carrinho vazio ---------- */
+
+.carrinho-vazio {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.carrinho-vazio > svg {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 18px;
+    color: var(--roxo);
+    stroke-width: 1.4;
+}
+
+.carrinho-vazio h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.carrinho-vazio p {
+    margin-bottom: 22px;
+    color: var(--texto-suave);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.carrinho-vazio .btn {
+    font-size: 0.9rem;
+}
+
+/* ---------- Resumo (aside) ---------- */
+
+.resumo {
+    position: sticky;
+    top: 20px;
+    background: linear-gradient(150deg, #21112f, #100b19);
+    border: 1px solid #382044;
+    border-radius: 18px;
+    padding: 26px;
+}
+
+.resumo h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #281638;
+}
+
+.resumo-linha {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 0;
+    color: var(--texto-suave);
+    font-size: 0.9rem;
+}
+
+.resumo-linha span:last-child {
+    color: var(--texto);
+    font-weight: 500;
+}
+
+.resumo-linha.total {
+    margin-top: 10px;
+    padding-top: 18px;
+    border-top: 1px solid #382044;
+    font-size: 1.1rem;
+    color: var(--texto);
+    font-weight: 600;
+}
+
+.resumo-linha.total span:last-child {
+    color: var(--roxo-claro);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* ---------- Botão finalizar ---------- */
+
+.btn-finalizar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 22px;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: var(--roxo);
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-finalizar svg {
+    width: 18px;
+    height: 18px;
+}
+
+.btn-finalizar:hover:not(:disabled) {
+    background: #c477ff;
+    transform: translateY(-2px);
+}
+
+.btn-finalizar:disabled {
+    background: #3a2b4a;
+    color: #7a6b8a;
+    cursor: not-allowed;
+}
+
+/* ---------- Aviso ---------- */
+
+.aviso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+    color: var(--texto-suave);
+    font-size: 0.78rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.aviso svg {
+    width: 15px;
+    height: 15px;
+    color: var(--roxo-claro);
+    flex-shrink: 0;
+}
+
+/* ---------- Link continuar comprando ---------- */
+
+.continuar {
+    display: block;
+    margin-top: 16px;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #382449;
+    border-radius: 30px;
+    color: var(--roxo-claro);
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.continuar:hover {
+    background: #2a1b3d;
+    border-color: #5a3d75;
+}
+
+/* ---------- Utilitário ---------- */
+
+.oculto {
+    display: none !important;
+}
+
+/* ============================================
+   RESPONSIVO
+   ============================================ */
+
+/* Ajusta o layout para telas de tamanhos diferentes. */
+@media (max-width: 900px) {
+    .carrinho-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .resumo {
+        position: static;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 14px 18px;
+    }
+
+    .header .voltar {
+        font-size: 0.8rem;
+    }
+
+    .carrinho-container {
+        margin: 25px auto 40px;
+    }
+
+    .lista-carrinho,
+    .resumo {
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    .item-carrinho > img {
+        width: 65px;
+        height: 95px;
+    }
+
+    .item-info h3 {
+        font-size: 0.95rem;
+    }
+
+    .item-acoes {
+        flex-wrap: wrap;
+    }
+
+    .remover {
+        font-size: 0.72rem;
+        padding: 6px 10px;
+    }
+
+    .titulo-pagina h1 {
+        font-size: 2rem;
+    }
+
+    .titulo-pagina p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .item-carrinho {
+        gap: 12px;
+    }
+
+    .item-carrinho > img {
+        width: 55px;
+        height: 82px;
+    }
+
+    .quantidade button {
+        width: 26px;
+        height: 26px;
+    }
+
+    .quantidade span {
+        min-width: 22px;
+        font-size: 0.85rem;
+    }
+}

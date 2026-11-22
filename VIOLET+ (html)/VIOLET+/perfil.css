@@ -1,0 +1,557 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header .voltar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--texto-suave);
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.header .voltar:hover {
+    color: var(--roxo-claro);
+}
+
+.header .voltar svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Cores e valores usados em várias partes do site. */
+:root {
+    --fundo: #100c16;
+    --painel: #191321;
+    --roxo: #8b5cf6;
+    --lilas: #c084fc;
+    --texto: #f5f0fa;
+    --texto-secundario: #a59aaf;
+    --borda: rgba(255, 255, 255, 0.08);
+}
+
+/* Estilo geral da página. */
+body {
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    padding-bottom: 105px;
+}
+
+/* Cabeçalho */
+
+.topo {
+    height: 78px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--borda);
+}
+
+.logo {
+    color: var(--texto);
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: var(--lilas);
+}
+
+.topo-texto {
+    color: var(--texto-secundario);
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+/* Conteúdo */
+
+/* Estilos da área de perfil. */
+.perfil-container {
+    width: 86%;
+    max-width: 1050px;
+    margin: 42px auto;
+}
+
+.subtitulo {
+    display: block;
+    color: var(--lilas);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Banner do perfil */
+
+.perfil-banner {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(110deg, #251438, #191321 70%);
+    border: 1px solid rgba(192, 132, 252, 0.16);
+    padding: 35px;
+    margin-bottom: 45px;
+}
+
+.banner-luz {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    right: 5%;
+    top: -180px;
+    background: var(--roxo);
+    filter: blur(100px);
+    opacity: 0.3;
+}
+
+.perfil-principal {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.avatar {
+    width: 88px;
+    height: 88px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: var(--lilas);
+    background: rgba(192, 132, 252, 0.12);
+    border: 1px solid rgba(192, 132, 252, 0.35);
+}
+
+.avatar svg {
+    width: 40px;
+    height: 40px;
+    stroke-width: 1.4;
+}
+
+.status {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 5px;
+    bottom: 5px;
+    background: #76e2a5;
+    border: 2px solid #251438;
+    border-radius: 50%;
+}
+
+.perfil-identificacao h1 {
+    font-size: clamp(25px, 4vw, 36px);
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 6px;
+}
+
+.perfil-identificacao p {
+    color: var(--texto-secundario);
+    font-size: 14px;
+}
+
+.nivel {
+    margin-left: auto;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 13px;
+    color: var(--lilas);
+    background: rgba(192, 132, 252, 0.1);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nivel svg {
+    width: 15px;
+}
+
+/* Seções */
+
+.secao-perfil {
+    margin-bottom: 43px;
+}
+
+.titulo-secao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--borda);
+    margin-bottom: 8px;
+}
+
+.titulo-secao h2 {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.titulo-secao > svg {
+    color: var(--lilas);
+    width: 24px;
+    height: 24px;
+    stroke-width: 1.5;
+}
+
+/* Informações da conta */
+
+.informacao-item {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    min-height: 83px;
+    padding: 15px 5px;
+    border-bottom: 1px solid var(--borda);
+    transition: background 0.2s;
+}
+
+.informacao-item:hover {
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.icone-info {
+    width: 43px;
+    height: 43px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #241a30;
+    color: var(--lilas);
+}
+
+.icone-info svg {
+    width: 20px;
+    height: 20px;
+}
+
+.informacao-item div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.informacao-item span {
+    font-size: 12px;
+    color: var(--texto-secundario);
+}
+
+.informacao-item strong {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.seta {
+    width: 18px;
+    margin-left: auto;
+    color: #756981;
+}
+
+/* Atividade */
+
+.atividade-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.atividade-card {
+    position: relative;
+    min-height: 190px;
+    padding: 24px;
+    background: var(--painel);
+    border: 1px solid var(--borda);
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.atividade-card:hover {
+    border-color: rgba(192, 132, 252, 0.45);
+    transform: translateY(-3px);
+}
+
+.atividade-icone {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--lilas);
+    background: rgba(139, 92, 246, 0.13);
+    margin-bottom: 18px;
+}
+
+.atividade-icone svg {
+    width: 21px;
+}
+
+.atividade-card > span {
+    display: block;
+    color: var(--texto-secundario);
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.atividade-card strong {
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.atividade-card p {
+    color: var(--texto-secundario);
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.atividade-seta {
+    position: absolute;
+    top: 25px;
+    right: 22px;
+    width: 19px;
+    color: #8c7b9e;
+}
+
+/* Banner final */
+
+.destaque-violet {
+    min-height: 230px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    background: linear-gradient(105deg, #382052, #20152d 72%);
+    border-left: 3px solid var(--lilas);
+}
+
+.destaque-conteudo {
+    position: relative;
+    z-index: 1;
+}
+
+.destaque-conteudo h2 {
+    font-size: clamp(23px, 3.5vw, 32px);
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -0.7px;
+}
+
+.destaque-conteudo p {
+    color: #c2b5cf;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+.botao-filmes {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 17px;
+    margin-top: 22px;
+    background: var(--lilas);
+    color: #180e23;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: background 0.2s;
+}
+
+.botao-filmes:hover {
+    background: #d8b4fe;
+}
+
+.botao-filmes svg {
+    width: 17px;
+}
+
+.destaque-icone {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%) rotate(-12deg);
+    color: rgba(192, 132, 252, 0.13);
+}
+
+.destaque-icone svg {
+    width: 155px;
+    height: 155px;
+    stroke-width: 1;
+}
+
+.destaque-icone span {
+    position: absolute;
+    right: -8px;
+    bottom: -10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+/* Rodapé */
+
+.rodape-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 28px 0 10px;
+    color: #84758f;
+    font-size: 12px;
+}
+
+.rodape-perfil svg {
+    width: 16px;
+    color: var(--lilas);
+}
+
+
+/* Responsividade */
+
+/* Ajusta o layout para telas de tamanhos diferentes. */
+@media (max-width: 650px) {
+    .topo {
+        height: 68px;
+        padding: 0 6%;
+    }
+
+    .logo {
+        font-size: 27px;
+    }
+
+    .topo-texto {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .perfil-container {
+        width: 90%;
+        margin: 25px auto;
+    }
+
+    .perfil-banner {
+        padding: 24px 19px;
+        margin-bottom: 35px;
+    }
+
+    .perfil-principal {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .avatar {
+        width: 65px;
+        height: 65px;
+    }
+
+    .avatar svg {
+        width: 30px;
+    }
+
+    .perfil-identificacao {
+        flex: 1;
+        min-width: 170px;
+    }
+
+    .perfil-identificacao h1 {
+        font-size: 25px;
+    }
+
+    .perfil-identificacao p {
+        font-size: 12px;
+    }
+
+    .nivel {
+        margin-left: 81px;
+        margin-top: -5px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 21px;
+    }
+
+    .informacao-item {
+        gap: 12px;
+    }
+
+    .informacao-item strong {
+        font-size: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    .atividade-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .atividade-card {
+        min-height: 170px;
+        padding: 20px;
+    }
+
+    .destaque-violet {
+        padding: 25px 20px;
+    }
+
+    .destaque-conteudo h2 {
+        font-size: 24px;
+    }
+
+    .destaque-conteudo p {
+        max-width: 230px;
+        line-height: 1.5;
+    }
+
+    .destaque-icone {
+        right: -35px;
+        opacity: 0.6;
+    }
+
+    .destaque-icone svg {
+        width: 110px;
+        height: 110px;
+    }
+
+    .navbar-inferior {
+        min-height: 72px;
+        justify-content: space-around;
+        gap: 0;
+    }
+
+    .nav-item {
+        min-width: 65px;
+    }
+}
+
+@media (max-width: 360px) {
+    .perfil-identificacao h1 {
+        font-size: 22px;
+    }
+
+    .perfil-identificacao {
+        min-width: 140px;
+    }
+
+    .nivel {
+        margin-left: 0;
+    }
+
+    .destaque-icone {
+        display: none;
+    }
+}

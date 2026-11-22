@@ -1,0 +1,398 @@
+/* ============================================
+   VIOLET+ — PÁGINA DE PAGAMENTO
+   ============================================ */
+
+/* Estilo geral da página. */
+body {
+  padding-bottom: 100px;
+}
+
+.pagamento-container {
+  width: min(560px, 92%);
+  margin: 40px auto 60px;
+}
+
+.carregando {
+  color: var(--texto-suave);
+  text-align: center;
+  padding: 40px 0;
+}
+
+.header .voltar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--texto-suave);
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.header .voltar:hover {
+  color: var(--roxo-claro);
+}
+
+.header .voltar svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ---------- Painel ---------- */
+
+/* Aparência do painel principal. */
+.painel {
+  background: linear-gradient(150deg, #21112f, #100b19);
+  border: 1px solid #382044;
+  border-radius: 20px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* ---------- Cabeçalho ---------- */
+
+.painel-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.painel-subtitulo {
+  color: var(--roxo-claro);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.painel-titulo {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+/* ---------- Seções ---------- */
+
+.secao-titulo {
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.secao-titulo svg {
+  width: 16px;
+  height: 16px;
+  color: var(--texto-suave);
+}
+
+.secao-desc {
+  color: var(--texto-suave);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+.divisor {
+  height: 1px;
+  background: #2a1b3a;
+}
+
+/* ---------- Filme ---------- */
+
+.filme-escolhido {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+  background: #1a1225;
+  border: 1px solid #382449;
+  border-radius: 14px;
+  margin-top: 12px;
+}
+
+.filme-escolhido img {
+  width: 80px;
+  height: 118px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.filme-escolhido-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filme-escolhido-info small {
+  color: var(--texto-suave);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.filme-escolhido-info h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.filme-escolhido-info p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--texto-suave);
+  font-size: 0.8rem;
+}
+
+.filme-escolhido-info p svg {
+  width: 13px;
+  height: 13px;
+  color: var(--roxo-claro);
+}
+
+/* ---------- Resumo de valores ---------- */
+
+.resumo {
+  background: #1a1225;
+  border: 1px solid #382449;
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.resumo-linha {
+  display: flex;
+  justify-content: space-between;
+  color: var(--texto-suave);
+  font-size: 0.88rem;
+}
+
+.resumo-linha span:last-child {
+  color: var(--texto);
+  font-weight: 500;
+}
+
+.resumo-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  border-top: 1px solid #382044;
+  margin-top: 4px;
+}
+
+.resumo-total .label {
+  color: var(--roxo-claro);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.resumo-total .valor {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--roxo-claro);
+}
+
+/* ---------- Formas de pagamento ---------- */
+
+.opcoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.opcao {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  background: #1a1225;
+  border: 1px solid #382449;
+  border-radius: 13px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  width: 100%;
+}
+
+.opcao:hover {
+  background: #21162d;
+}
+
+.opcao.selecionada {
+  border-color: var(--roxo-claro);
+  background: #241735;
+}
+
+.icone-opcao {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #21162d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+
+.opcao.selecionada .icone-opcao {
+  background: #342044;
+}
+
+.icone-opcao svg {
+  width: 21px;
+  height: 21px;
+  color: var(--texto-suave);
+  transition: color 0.2s;
+}
+
+.opcao.selecionada .icone-opcao svg {
+  color: var(--roxo-claro);
+}
+
+.texto-opcao {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.texto-opcao strong {
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.opcao.selecionada .texto-opcao strong {
+  color: var(--roxo-claro);
+}
+
+.texto-opcao small {
+  color: var(--texto-suave);
+  font-size: 0.75rem;
+}
+
+.seletor {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  border: 1.5px solid #766481;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: border-color 0.2s;
+}
+
+.opcao.selecionada .seletor {
+  border-color: var(--roxo);
+}
+
+.opcao.selecionada .seletor::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--roxo);
+}
+
+/* ---------- CTA ---------- */
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  background: var(--roxo-claro);
+  color: #180e23;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s, opacity 0.2s;
+  margin-top: 4px;
+}
+
+.cta:hover:not(:disabled) {
+  background: #e0b8ff;
+  transform: translateY(-2px);
+}
+
+.cta:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.cta svg {
+  width: 19px;
+  height: 19px;
+}
+
+/* ---------- Aviso ---------- */
+
+.aviso-seguranca {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: var(--texto-suave);
+  font-size: 0.75rem;
+}
+
+.aviso-seguranca svg {
+  width: 14px;
+  height: 14px;
+  color: var(--roxo-claro);
+}
+
+/* ---------- Erro ---------- */
+
+.erro {
+  text-align: center;
+  padding: 50px 24px;
+  background: var(--superficie);
+  border: 1px solid #382044;
+  border-radius: 18px;
+}
+
+.erro h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.erro p {
+  color: var(--texto-suave);
+  margin-bottom: 22px;
+}
+
+/* ---------- Responsivo ---------- */
+
+/* Ajusta o layout para telas de tamanhos diferentes. */
+@media (max-width: 600px) {
+  .pagamento-container {
+    margin: 25px auto 40px;
+  }
+
+  .painel {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .filme-escolhido img {
+    width: 65px;
+    height: 95px;
+  }
+}

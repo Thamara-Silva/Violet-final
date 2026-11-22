@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Perfil | Violet+</title>
+
+    <link rel="stylesheet" href="style_responsivo.css">
+    <link rel="stylesheet" href="perfil.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Carrega o arquivo JavaScript responsável pelas ações da página. -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+<!-- Cabeçalho com a logo e os links principais. -->
+ <header class="header">
+        <a href="index.html#inicio" class="logo">
+            <img src="imgs/Violet.png" alt="Violet+">
+        </a>
+
+      <a href="index.html#filmes" class="voltar">
+            <i data-lucide="arrow-left"></i>
+            Continuar explorando
+        </a>
+    </header>
+
+    <!-- Conteúdo principal desta página. -->
+    <main class="perfil-container">
+
+    <!-- Seção que agrupa informações relacionadas. -->
+        <section class="perfil-banner">
+            <div class="banner-luz"></div>
+
+            <div class="perfil-principal">
+                <div class="avatar">
+                    <i data-lucide="user-round"></i>
+                    <span class="status"></span>
+                </div>
+
+                <div class="perfil-identificacao">
+                    <span class="subtitulo">BEM-VINDO DE VOLTA</span>
+                    <h1>Olá, Alexandre!</h1>
+                    <p>Que tal escolher seu próximo filme?</p>
+                </div>
+
+            
+            </div>
+        </section>
+
+        <section class="secao-perfil">
+            <div class="titulo-secao">
+                <div>
+                    <span class="subtitulo">SEU ESPAÇO</span>
+                    <h2>Minha conta</h2>
+                </div>
+                <i data-lucide="user-round-cog"></i>
+            </div>
+
+            <div class="informacoes">
+                <div class="informacao-item">
+                    <div class="icone-info">
+                        <i data-lucide="user-round"></i>
+                    </div>
+                    <div>
+                        <span>Nome completo</span>
+                        <strong>Alexandre Siqueira Reis</strong>
+                    </div>
+                    <i data-lucide="chevron-right" class="seta"></i>
+                </div>
+
+                <div class="informacao-item">
+                    <div class="icone-info">
+                        <i data-lucide="mail"></i>
+                    </div>
+                    <div>
+                        <span>E-mail</span>
+                        <strong>alexandre@gmail.com</strong>
+                    </div>
+                    <i data-lucide="chevron-right" class="seta"></i>
+                </div>
+
+                <div class="informacao-item">
+                    <div class="icone-info">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <div>
+                        <span>Segurança</span>
+                        <strong>Senha e privacidade</strong>
+                    </div>
+                    <i data-lucide="chevron-right" class="seta"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="destaque-violet">
+            <div class="destaque-conteudo">
+                <span class="subtitulo">O SEU PRÓXIMO CAPÍTULO</span>
+                <h2>Grandes histórias.<br>Momentos inesquecíveis.</h2>
+                <p>Encontre uma nova história para se apaixonar.</p>
+
+                <a href="index.html" class="botao-filmes">
+                    Explorar filmes
+                    <i data-lucide="arrow-right"></i>
+                </a>
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+    <!-- Links de navegação entre as páginas. -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <i data-lucide="clapperboard"></i>
+            <span>Filmes</span>
+        </a>
+
+        <a href="carrinho.html" class="nav-item">
+            <i data-lucide="shopping-cart"></i>
+            <span>Carrinho</span>
+        </a>
+
+        <a href="perfil.html" class="nav-item ativo">
+            <i data-lucide="user-round"></i>
+            <span>Perfil</span>
+        </a>
+    </nav>
+
+    <script src="carrinho-badge.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>

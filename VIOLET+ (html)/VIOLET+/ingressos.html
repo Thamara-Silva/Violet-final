@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Violet+ | Ingressos</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+<!-- Carrega o arquivo JavaScript responsável pelas ações da página. -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style_responsivo.css" />
+  <link rel="stylesheet" href="ingressos.css" />
+
+  <script src="filmes.js" defer></script>
+  <script src="ingressos.js" defer></script>
+</head>
+<body>
+
+<!-- Cabeçalho com a logo e os links principais. -->
+  <header class="header">
+    <a href="index.html#inicio" class="logo">
+      <img src="imgs/Violet.png" alt="Violet+" />
+    </a>
+
+    <a href="#" id="btn-voltar" class="voltar">
+      <i data-lucide="arrow-left"></i>
+      Voltar
+    </a>
+  </header>
+
+<!-- Conteúdo principal desta página. -->
+  <main class="ingressos-container">
+    <div id="painel-ingressos">
+      <div class="carregando">Carregando…</div>
+    </div>
+  </main>
+
+<!-- Menu de navegação na parte inferior da tela. -->
+  <footer class="bottom-nav">
+    <a href="index.html#filmes" class="nav-item">
+      <i data-lucide="clapperboard"></i>
+      <span>Filmes</span>
+    </a>
+    <a href="carrinho.html" class="nav-item">
+      <i data-lucide="shopping-cart"></i>
+      <span>Carrinho</span>
+    </a>
+    <a href="perfil.html" class="nav-item">
+      <i data-lucide="user-round"></i>
+      <span>Perfil</span>
+    </a>
+  </footer>
+
+  <script src="carrinho-badge.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

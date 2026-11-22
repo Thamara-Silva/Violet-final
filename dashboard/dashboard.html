@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violet+ | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="layout-pagina">
+                <span>Violet<span class="texto-plus">+</span></span>
+            </div>
+
+            <nav class="navegacao-menu">
+                <a class="ativo" href="#overview"><span>▦</span> Visão geral</a>
+                <a href="#movies"><span>▣</span> Filmes</a>
+                <a href="#sales"><span>◈</span> Vendas</a>
+            </nav>
+            <div class="rodape-lateral">
+                <div class="chip-admin">
+                    <span class="avatar-admin">A</span>
+                    <div>
+                        <b>Administrador</b>
+                        <small>Violet+ Cinema</small>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="conteudo-principal">
+            <header class="cabecalho-topo">
+                <button class="botao-menu-movel" id="menuBtn">☰</button>
+                <div>
+                    <p class="subtitulo-topo">PAINEL ADMINISTRATIVO</p>
+                    <h1>Dashboard</h1>
+                </div>
+                <button class="botao-primario" id="newMovie">＋ Novo filme</button>
+            </header>
+
+            <!-- Estatísticas / Cards -->
+            <section id="overview" class="grade-estatisticas">
+                <article class="cartao-estatistica">
+                    <div class="icone-estatistica roxo">▣</div>
+                    <div>
+                        <p>Filmes cadastrados</p>
+                        <strong id="movieCount">—</strong>
+                        <small>Catálogo atual</small>
+                    </div>
+                </article>
+                <article class="cartao-estatistica">
+                    <div class="icone-estatistica rosa">◈</div>
+                    <div>
+                        <p>Ingressos vendidos</p>
+                        <strong id="ticketCount">—</strong>
+                        <small>Vendas registradas</small>
+                    </div>
+                </article>
+                <article class="cartao-estatistica">
+                    <div class="icone-estatistica azul">$</div>
+                    <div>
+                        <p>Faturamento total</p>
+                        <strong id="revenue">—</strong>
+                        <small>Valor das vendas</small>
+                    </div>
+                </article>
+                <article class="cartao-estatistica">
+                    <div class="icone-estatistica verde">▤</div>
+                    <div>
+                        <p>Vendas realizadas</p>
+                        <strong id="saleCount">—</strong>
+                        <small>Transações</small>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Seção de Filmes -->
+            <section class="painel-secao" id="movies">
+                <div class="cabecalho-painel">
+                    <div>
+                        <h2>Catálogo de filmes</h2>
+                        <p>Gerencie os títulos disponíveis no cinema.</p>
+                    </div>
+                    <div class="ferramentas-busca">
+                        <input id="search" placeholder="⌕ Buscar filme..." aria-label="Buscar filme">
+                        <select id="statusFilter">
+                            <option value="all">Todos</option>
+                            <option value="active">Ativos</option>
+                            <option value="inactive">Inativos</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="container-tabela">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>FILME</th>
+                                <th>GÊNERO</th>
+                                <th>DURAÇÃO</th>
+                                <th>PREÇO</th>
+                                <th>STATUS</th>
+                                <th>AÇÕES</th>
+                            </tr>
+                        </thead>
+                        <tbody id="movieRows">
+                            <tr>
+                                <td colspan="6" class="mensagem-vazio">Carregando...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="lista-movel" id="mobileMovies"></div>
+            </section>
+
+            <!-- Seção de Vendas -->
+            <section class="painel-secao" id="sales">
+                <div class="cabecalho-painel">
+                    <div>
+                        <h2>Últimas vendas</h2>
+                        <p>Histórico de ingressos e pagamentos.</p>
+                    </div>
+                </div>
+                <div class="container-tabela">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>FILME</th>
+                                <th>SESSÃO</th>
+                                <th>INGRESSOS</th>
+                                <th>PAGAMENTO</th>
+                                <th>VALOR</th>
+                                <th>DATA</th>
+                            </tr>
+                        </thead>
+                        <tbody id="salesRows">
+                            <tr>
+                                <td colspan="6" class="mensagem-vazio">Carregando...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <footer class="rodape-pagina">Violet+ <span>•</span> Painel de administração</footer>
+        </main>
+    </div>
+
+    <!-- Modal de Cadastro / Edição -->
+    <div class="fundo-modal" id="modal">
+        <section class="caixa-modal">
+            <div class="cabecalho-modal">
+                <div>
+                    <p class="subtitulo-topo">CATÁLOGO</p>
+                    <h2 id="modalTitle">Cadastrar filme</h2>
+                </div>
+                <button class="botao-fechar" id="closeModal">×</button>
+            </div>
+            <form id="movieForm">
+                <input type="hidden" id="movieId">
+                <label>Nome do filme
+                    <input id="name" required maxlength="150" placeholder="Título">
+                </label>
+                <div class="grade-formulario">
+                    <label>Gênero
+                        <input id="genre" required placeholder="Ex.: Ficção">
+                    </label>
+                    <label>Duração (min)
+                        <input id="duration" type="number" required min="1" placeholder="120">
+                    </label>
+                    <label>Preço base (R$)
+                        <input id="price" type="number" required min="0" step="0.01" placeholder="25.00">
+                    </label>
+                    <label>Imagem (URL)
+                        <input id="image" placeholder="https://...">
+                    </label>
+                </div>
+                <label>Sinopse
+                    <textarea id="synopsis" rows="3" placeholder="Descrição do filme..."></textarea>
+                </label>
+                <label class="rotulo-checkbox">
+                    <input type="checkbox" id="active" checked> Filme ativo no catálogo
+                </label>
+                <div class="acoes-formulario">
+                    <button type="button" class="botao-secundario" id="cancel">Cancelar</button>
+                    <button type="submit" class="botao-primario" id="saveBtn">Salvar filme</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <!-- Alerta Flutuante (Toast) -->
+    <div class="alerta-toast" id="toast"></div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

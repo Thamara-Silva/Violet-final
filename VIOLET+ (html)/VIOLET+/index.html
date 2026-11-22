@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violet+ | Cinema</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style_responsivo.css">
+
+    <!-- ⚠️ ORDEM: filmes.js (carrega API) → index.js (monta cards) → buscar.js (usa filmes) -->
+    <script src="filmes.js" defer></script>
+    <script src="index.js" defer></script>
+    <script src="buscar.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#inicio" class="logo">
+            <img src="imgs/Violet.png" alt="Violet+">
+        </a>
+
+        <div class="busca-container">
+            <div class="busca">
+                <i data-lucide="search"></i>
+                <input type="search" id="buscarFilme" placeholder="Buscar filmes..." autocomplete="off">
+            </div>
+            <div class="sugestoes-filmes" id="sugestoesFilmes"></div>
+        </div>
+    </header>
+
+    <main id="inicio">
+        <section class="hero">
+            <div class="hero-text">
+                <span class="destaque">DESTAQUE DA SEMANA</span>
+                <h1>AVATAR: <span>O CAMINHO DA ÁGUA</span></h1>
+                <div class="info-filme">
+                    <span>2022</span>
+                    <span>Ficção científica</span>
+                    <span>3h 12min</span>
+                </div>
+                <p>
+                    Jake Sully e Neytiri precisam proteger sua família
+                    quando uma antiga ameaça retorna a Pandora.
+                    Uma jornada extraordinária por um mundo repleto
+                    de beleza, aventura e descobertas.
+                </p>
+                <a href="#filmes" class="btn">
+                    <i data-lucide="ticket"></i>
+                    Explorar filmes
+                </a>
+            </div>
+            <div class="hero-poster">
+                <img src="https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg" alt="Pôster de Avatar">
+            </div>
+        </section>
+
+        <section class="section" id="filmes">
+            <div class="section-header"></div>
+
+            <!-- ⚠️ Cards são montados pelo index.js -->
+            <div class="cards" id="cards">
+                <p style="color:#aaa0bb;">Carregando filmes…</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bottom-nav">
+        <a href="#filmes" class="nav-item ativo" aria-current="page">
+            <i data-lucide="clapperboard"></i>
+            <span>Filmes</span>
+        </a>
+        <a href="carrinho.html" class="nav-item">
+            <i data-lucide="shopping-cart"></i>
+            <span>Carrinho</span>
+        </a>
+        <a href="perfil.html" class="nav-item">
+            <i data-lucide="user-round"></i>
+            <span>Perfil</span>
+        </a>
+    </footer>
+
+    <script src="carrinho-badge.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

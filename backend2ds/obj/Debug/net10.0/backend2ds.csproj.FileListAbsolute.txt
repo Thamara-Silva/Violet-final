@@ -1,0 +1,186 @@
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\backend2ds.csproj.AssemblyReference.cache
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\backend2ds.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\backend2ds.AssemblyInfoInputs.cache
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\backend2ds.AssemblyInfo.cs
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\backend2ds.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\backend2ds.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Aluno\backend2ds\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\Aluno\backend2ds\bin\Debug\net10.0\appsettings.json
+C:\Users\Aluno\backend2ds\bin\Debug\net10.0\backend2ds.staticwebassets.endpoints.json
+C:\Users\Aluno\backend2ds\bin\Debug\net10.0\backend2ds.exe
+C:\Users\Aluno\backend2ds\bin\Debug\net10.0\backend2ds.deps.json
+C:\Users\Aluno\backend2ds\bin\Debug\net10.0\backend2ds.runtimeconfig.json
+C:\Users\Aluno\backend2ds\bin\Debug\net10.0\backend2ds.dll
+C:\Users\Aluno\backend2ds\bin\Debug\net10.0\backend2ds.pdb
+C:\Users\Aluno\backend2ds\bin\Debug\net10.0\MySqlConnector.dll
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\scopedcss\bundle\backend2ds.styles.css
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\backend2ds.csproj.Up2Date
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\backend2ds.dll
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\refint\backend2ds.dll
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\backend2ds.pdb
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\backend2ds.genruntimeconfig.cache
+C:\Users\Aluno\backend2ds\obj\Debug\net10.0\ref\backend2ds.dll
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\bin\Debug\net10.0\appsettings.Development.json
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\bin\Debug\net10.0\appsettings.json
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\bin\Debug\net10.0\backend2ds.staticwebassets.endpoints.json
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\bin\Debug\net10.0\backend2ds.exe
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\bin\Debug\net10.0\backend2ds.deps.json
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\bin\Debug\net10.0\backend2ds.runtimeconfig.json
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\bin\Debug\net10.0\backend2ds.dll
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\bin\Debug\net10.0\backend2ds.pdb
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\bin\Debug\net10.0\MySqlConnector.dll
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.csproj.AssemblyReference.cache
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\rpswa.dswa.cache.json
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.GeneratedMSBuildEditorConfig.editorconfig
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.AssemblyInfoInputs.cache
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.AssemblyInfo.cs
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.csproj.CoreCompileInputs.cache
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.MvcApplicationPartsAssemblyInfo.cache
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\rjimswa.dswa.cache.json
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\scopedcss\bundle\backend2ds.styles.css
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\staticwebassets.build.json
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\staticwebassets.build.json.cache
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\staticwebassets.development.json
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\swae.build.ex.cache
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.csproj.Up2Date
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.dll
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\refint\backend2ds.dll
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.pdb
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.genruntimeconfig.cache
+D:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\ref\backend2ds.dll
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.csproj.AssemblyReference.cache
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\rpswa.dswa.cache.json
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.GeneratedMSBuildEditorConfig.editorconfig
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.AssemblyInfoInputs.cache
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.AssemblyInfo.cs
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.csproj.CoreCompileInputs.cache
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.MvcApplicationPartsAssemblyInfo.cache
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\bin\Debug\net10.0\appsettings.Development.json
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\bin\Debug\net10.0\appsettings.json
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\bin\Debug\net10.0\backend2ds.staticwebassets.endpoints.json
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\bin\Debug\net10.0\backend2ds.exe
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\bin\Debug\net10.0\backend2ds.deps.json
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\bin\Debug\net10.0\backend2ds.runtimeconfig.json
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\bin\Debug\net10.0\backend2ds.dll
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\bin\Debug\net10.0\backend2ds.pdb
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\bin\Debug\net10.0\MySqlConnector.dll
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\rjimswa.dswa.cache.json
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\scopedcss\bundle\backend2ds.styles.css
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\staticwebassets.build.json
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\staticwebassets.build.json.cache
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\staticwebassets.development.json
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\swae.build.ex.cache
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.csproj.Up2Date
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.dll
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\refint\backend2ds.dll
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.pdb
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\backend2ds.genruntimeconfig.cache
+E:\NICOLE PENDRIVE\2 Ano\DS\backend2ds\obj\Debug\net10.0\ref\backend2ds.dll
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\backend2ds.csproj.AssemblyReference.cache
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\backend2ds.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\backend2ds.AssemblyInfoInputs.cache
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\backend2ds.AssemblyInfo.cs
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\backend2ds.csproj.CoreCompileInputs.cache
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\backend2ds.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\backend2ds.dll
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\refint\backend2ds.dll
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\backend2ds.pdb
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\bin\Debug\net10.0\appsettings.json
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\bin\Debug\net10.0\backend2ds.staticwebassets.endpoints.json
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\bin\Debug\net10.0\backend2ds.exe
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\bin\Debug\net10.0\backend2ds.deps.json
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\bin\Debug\net10.0\backend2ds.runtimeconfig.json
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\bin\Debug\net10.0\backend2ds.dll
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\bin\Debug\net10.0\backend2ds.pdb
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\bin\Debug\net10.0\MySqlConnector.dll
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\scopedcss\bundle\backend2ds.styles.css
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\backend2ds.csproj.Up2Date
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\backend2ds.genruntimeconfig.cache
+C:\Users\ffs\Downloads\Projeto DS + PAM\backend2ds\obj\Debug\net10.0\ref\backend2ds.dll
+D:\backend2ds\bin\Debug\net10.0\appsettings.Development.json
+D:\backend2ds\bin\Debug\net10.0\appsettings.json
+D:\backend2ds\bin\Debug\net10.0\backend2ds.staticwebassets.endpoints.json
+D:\backend2ds\bin\Debug\net10.0\backend2ds.exe
+D:\backend2ds\bin\Debug\net10.0\backend2ds.deps.json
+D:\backend2ds\bin\Debug\net10.0\backend2ds.runtimeconfig.json
+D:\backend2ds\bin\Debug\net10.0\backend2ds.dll
+D:\backend2ds\bin\Debug\net10.0\backend2ds.pdb
+D:\backend2ds\bin\Debug\net10.0\MySqlConnector.dll
+D:\backend2ds\obj\Debug\net10.0\backend2ds.csproj.AssemblyReference.cache
+D:\backend2ds\obj\Debug\net10.0\rpswa.dswa.cache.json
+D:\backend2ds\obj\Debug\net10.0\backend2ds.GeneratedMSBuildEditorConfig.editorconfig
+D:\backend2ds\obj\Debug\net10.0\backend2ds.AssemblyInfoInputs.cache
+D:\backend2ds\obj\Debug\net10.0\backend2ds.AssemblyInfo.cs
+D:\backend2ds\obj\Debug\net10.0\backend2ds.csproj.CoreCompileInputs.cache
+D:\backend2ds\obj\Debug\net10.0\backend2ds.MvcApplicationPartsAssemblyInfo.cache
+D:\backend2ds\obj\Debug\net10.0\rjimswa.dswa.cache.json
+D:\backend2ds\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+D:\backend2ds\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+D:\backend2ds\obj\Debug\net10.0\scopedcss\bundle\backend2ds.styles.css
+D:\backend2ds\obj\Debug\net10.0\staticwebassets.build.json
+D:\backend2ds\obj\Debug\net10.0\staticwebassets.build.json.cache
+D:\backend2ds\obj\Debug\net10.0\staticwebassets.development.json
+D:\backend2ds\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+D:\backend2ds\obj\Debug\net10.0\swae.build.ex.cache
+D:\backend2ds\obj\Debug\net10.0\backend2ds.csproj.Up2Date
+D:\backend2ds\obj\Debug\net10.0\backend2ds.dll
+D:\backend2ds\obj\Debug\net10.0\refint\backend2ds.dll
+D:\backend2ds\obj\Debug\net10.0\backend2ds.pdb
+D:\backend2ds\obj\Debug\net10.0\backend2ds.genruntimeconfig.cache
+D:\backend2ds\obj\Debug\net10.0\ref\backend2ds.dll
+E:\backend2ds\bin\Debug\net10.0\appsettings.Development.json
+E:\backend2ds\bin\Debug\net10.0\backend2ds.staticwebassets.endpoints.json
+E:\backend2ds\bin\Debug\net10.0\appsettings.json
+E:\backend2ds\bin\Debug\net10.0\backend2ds.exe
+E:\backend2ds\bin\Debug\net10.0\backend2ds.deps.json
+E:\backend2ds\bin\Debug\net10.0\backend2ds.runtimeconfig.json
+E:\backend2ds\bin\Debug\net10.0\backend2ds.dll
+E:\backend2ds\bin\Debug\net10.0\backend2ds.pdb
+E:\backend2ds\bin\Debug\net10.0\MySqlConnector.dll
+E:\backend2ds\obj\Debug\net10.0\backend2ds.csproj.AssemblyReference.cache
+E:\backend2ds\obj\Debug\net10.0\rpswa.dswa.cache.json
+E:\backend2ds\obj\Debug\net10.0\backend2ds.GeneratedMSBuildEditorConfig.editorconfig
+E:\backend2ds\obj\Debug\net10.0\backend2ds.AssemblyInfoInputs.cache
+E:\backend2ds\obj\Debug\net10.0\backend2ds.AssemblyInfo.cs
+E:\backend2ds\obj\Debug\net10.0\backend2ds.csproj.CoreCompileInputs.cache
+E:\backend2ds\obj\Debug\net10.0\backend2ds.MvcApplicationPartsAssemblyInfo.cache
+E:\backend2ds\obj\Debug\net10.0\rjimswa.dswa.cache.json
+E:\backend2ds\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+E:\backend2ds\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+E:\backend2ds\obj\Debug\net10.0\scopedcss\bundle\backend2ds.styles.css
+E:\backend2ds\obj\Debug\net10.0\staticwebassets.build.json
+E:\backend2ds\obj\Debug\net10.0\staticwebassets.build.json.cache
+E:\backend2ds\obj\Debug\net10.0\staticwebassets.development.json
+E:\backend2ds\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+E:\backend2ds\obj\Debug\net10.0\swae.build.ex.cache
+E:\backend2ds\obj\Debug\net10.0\backend2ds.csproj.Up2Date
+E:\backend2ds\obj\Debug\net10.0\backend2ds.dll
+E:\backend2ds\obj\Debug\net10.0\refint\backend2ds.dll
+E:\backend2ds\obj\Debug\net10.0\backend2ds.pdb
+E:\backend2ds\obj\Debug\net10.0\backend2ds.genruntimeconfig.cache
+E:\backend2ds\obj\Debug\net10.0\ref\backend2ds.dll
