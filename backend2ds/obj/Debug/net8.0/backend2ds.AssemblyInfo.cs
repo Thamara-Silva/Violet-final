@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("backend2ds")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15e4be8eef2b4a475bef4bb3d92eb8c5f2f6030a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b262e226fdc8c3b993fa405d22844ff03c7231b")]
 [assembly: System.Reflection.AssemblyProductAttribute("backend2ds")]
 [assembly: System.Reflection.AssemblyTitleAttribute("backend2ds")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

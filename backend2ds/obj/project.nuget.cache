@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "GpU34w7+bAA=",
+  "dgSpecHash": "KDBWJDYlbb4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ffs\\Downloads\\Violet\\backend2ds\\backend2ds.csproj",
+  "projectFilePath": "D:\\Violet\\Violet\\backend2ds\\backend2ds.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ffs\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
-    "C:\\Users\\ffs\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
-    "C:\\Users\\ffs\\.nuget\\packages\\mysqlconnector\\2.6.2\\mysqlconnector.2.6.2.nupkg.sha512"
+    "C:\\Users\\thama\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\thama\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\thama\\.nuget\\packages\\mysqlconnector\\2.6.2\\mysqlconnector.2.6.2.nupkg.sha512"
   ],
   "logs": []
 }

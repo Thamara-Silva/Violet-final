@@ -11,7 +11,10 @@
 </head>
 <body>
     <div class="layout-pagina">
+        <aside class="painel-lateral" id="sidebar">
+            <div class="marca">
                 <span>Violet<span class="texto-plus">+</span></span>
+                <small>CINEMA</small>
             </div>
 
             <nav class="navegacao-menu">
@@ -173,8 +176,8 @@
                     <label>Preço base (R$)
                         <input id="price" type="number" required min="0" step="0.01" placeholder="25.00">
                     </label>
-                    <label>Imagem (URL)
-                        <input id="image" placeholder="https://...">
+                    <label>Caminho da imagem
+                        <input id="image" placeholder="Ex.: /imagens/filmes/filme.jpg">
                     </label>
                 </div>
                 <label>Sinopse

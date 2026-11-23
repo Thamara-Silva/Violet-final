@@ -67,7 +67,7 @@ export default function MovieDetail() {
     <View style={styles.fundo}>
       <ScrollView style={styles.container} contentContainerStyle={styles.conteudo} showsVerticalScrollIndicator={false}>
         <View style={[styles.filme, { width: larguraPainel }]}>
-          
+
           <View style={styles.cabecalho}>
             <Pressable style={styles.botaoVoltar} onPress={() => router.back()}>
               <Ionicons name="arrow-back" size={21} color={CORES.texto} />
@@ -113,7 +113,7 @@ export default function MovieDetail() {
 
             <View style={styles.sessoes}>
               {sessoes.length === 0 && <Text style={{ color: CORES.textoSecundario }}>Nenhuma sessão disponível.</Text>}
-              
+
               {sessoes.map((s) => {
                 const selecionada = sessaoSelecionada?.id === s.id;
                 // Formata a data para mostrar só a hora (ex: 19:00)
@@ -154,7 +154,12 @@ export default function MovieDetail() {
                 pathname: '/ingressos',
                 params: {
                   id: String(movie.id),
-                  sessao: new Date(sessaoSelecionada.dataHora).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }),
+                  nome: String(movie.nome),
+                  imagem: String(movie.imagem),
+                  sessao: new Date(sessaoSelecionada.dataHora).toLocaleTimeString('pt-BR', {
+                    hour: '2-digit',
+                    minute: '2-digit'
+                  }),
                   sessaoId: String(sessaoSelecionada.id),
                   preco: String(sessaoSelecionada.preco)
                 },

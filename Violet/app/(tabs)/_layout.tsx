@@ -1,5 +1,5 @@
 
-import { Tabs } from 'expo-router';
+import { Tabs, useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import {
   View,
@@ -10,6 +10,13 @@ import {
 } from 'react-native';
 
 export default function TabLayout() {
+  const router = useRouter();
+
+  // Atualiza o parâmetro da pesquisa enquanto o usuário digita.
+  const pesquisarFilmes = (texto: string) => {
+    router.setParams({ busca: texto });
+  };
+
   return (
     <Tabs
       screenOptions={{
@@ -33,6 +40,9 @@ export default function TabLayout() {
                 placeholderTextColor="#92879f"
                 style={styles.pesquisaInput}
                 returnKeyType="search"
+                onChangeText={pesquisarFilmes}
+                autoCapitalize="none"
+                autoCorrect={false}
               />
             </View>
           </View>
@@ -127,25 +137,41 @@ const styles = StyleSheet.create({
     height: 58,
   },
 
-  pesquisaContainer: {
-    flex: 1,
-    height: 42,
-    backgroundColor: '#17101f',
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: 14,
-    borderRadius: 12,
-    borderWidth: 1,
-    borderColor: '#352244',
-  },
+pesquisaContainer: {
+  flex: 1,
+  height: 46,
+  backgroundColor: '#171020',
+  flexDirection: 'row',
+  alignItems: 'center',
+  paddingHorizontal: 15,
+  borderRadius: 15,
+  borderWidth: 1,
+  borderColor: '#49305f',
+  gap: 10,
 
-  pesquisaInput: {
-    flex: 1,
-    color: '#ffffff',
-    fontSize: 14,
-    marginLeft: 9,
-    paddingVertical: 0,
+  shadowColor: '#b14cff',
+  shadowOffset: {
+    width: 0,
+    height: 2,
   },
+  shadowOpacity: 0.12,
+  shadowRadius: 8,
+  elevation: 3,
+},
+
+pesquisaInput: {
+  flex: 1,
+  color: '#ffffff',
+  fontSize: 14,
+  fontWeight: '500',
+  marginLeft: 0,
+  paddingVertical: 0,
+
+  outlineWidth: 0,
+  outlineColor: 'transparent',
+  outlineStyle: 'solid',
+},
+
 
   tabBar: {
     backgroundColor: '#100b18',

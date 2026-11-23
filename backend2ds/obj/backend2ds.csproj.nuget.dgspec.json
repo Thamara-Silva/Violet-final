@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ffs\\Downloads\\Violet\\backend2ds\\backend2ds.csproj": {}
+    "D:\\Violet\\Violet\\backend2ds\\backend2ds.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ffs\\Downloads\\Violet\\backend2ds\\backend2ds.csproj": {
+    "D:\\Violet\\Violet\\backend2ds\\backend2ds.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ffs\\Downloads\\Violet\\backend2ds\\backend2ds.csproj",
+        "projectUniqueName": "D:\\Violet\\Violet\\backend2ds\\backend2ds.csproj",
         "projectName": "backend2ds",
-        "projectPath": "C:\\Users\\ffs\\Downloads\\Violet\\backend2ds\\backend2ds.csproj",
-        "packagesPath": "C:\\Users\\ffs\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ffs\\Downloads\\Violet\\backend2ds\\obj\\",
+        "projectPath": "D:\\Violet\\Violet\\backend2ds\\backend2ds.csproj",
+        "packagesPath": "C:\\Users\\thama\\.nuget\\packages\\",
+        "outputPath": "D:\\Violet\\Violet\\backend2ds\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ffs\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\thama\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

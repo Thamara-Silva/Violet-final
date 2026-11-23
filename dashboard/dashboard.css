@@ -23,6 +23,22 @@ body {
 
 .layout-pagina {
   min-height: 100vh;
+  width: 100%;
+}
+
+.marca {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0 0 42px 8px;
+  font: 600 30px Oswald, sans-serif;
+  letter-spacing: .3px;
+}
+
+.marca small {
+  color: #a996bb;
+  font: 500 9px Outfit, sans-serif;
+  letter-spacing: 3px;
 }
 
 /* Painel Lateral (Sidebar) */
@@ -492,6 +508,7 @@ tbody tr:last-child td {
   }
   .painel-lateral.open {
     transform: translateX(0);
+    box-shadow: 12px 0 35px #160c2033;
   }
   .conteudo-principal {
     margin-left: 0;
@@ -577,5 +594,36 @@ tbody tr:last-child td {
   }
   .cabecalho-topo h1 {
     font-size: 23px;
+  }
+}
+/* Ajustes de estabilidade visual */
+button, input, select, textarea {
+  font-family: Outfit, sans-serif;
+}
+
+.painel-secao {
+  min-width: 0;
+}
+
+.container-tabela table {
+  min-width: 760px;
+}
+
+.film-cell img {
+  flex: 0 0 42px;
+}
+
+@media (max-width: 760px) {
+  .painel-lateral {
+    width: min(280px, 84vw);
+  }
+
+  .conteudo-principal {
+    width: 100%;
+    max-width: none;
+  }
+
+  .container-tabela {
+    max-width: 100%;
   }
 }

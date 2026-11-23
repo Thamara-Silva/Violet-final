@@ -6,16 +6,20 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 const MAX_INGRESSOS = 10;
 
 export default function Ingressos() {
-  const { id, sessao, sessaoId, preco } = useLocalSearchParams<{
-    id?: string; sessao?: string; sessaoId?: string; preco?: string;
+  const { id, nome, imagem, sessao, sessaoId, preco } = useLocalSearchParams<{
+    id?: string;
+    nome?: string;
+    imagem?: string;
+    sessao?: string;
+    sessaoId?: string;
+    preco?: string;
   }>();
-
   const router = useRouter();
   const { width } = useWindowDimensions();
 
   // Pega o preço real que veio da tela anterior, ou 25 como fallback
   const PRECO_INGRESSO = Number(preco) || 25;
-  
+
   const [quantidade, setQuantidade] = useState(1);
   const total = quantidade * PRECO_INGRESSO;
 
@@ -27,6 +31,8 @@ export default function Ingressos() {
       pathname: '/pagamento',
       params: {
         id: String(id),
+        nome: String(nome),
+        imagem: String(imagem),
         sessao: String(sessao),
         sessaoId: String(sessaoId),
         quantidade: String(quantidade),
@@ -34,14 +40,13 @@ export default function Ingressos() {
       },
     });
   };
-
   const larguraPainel = Math.min(width - 32, 480);
 
   return (
     <View style={styles.fundo}>
       <ScrollView style={styles.scroll} contentContainerStyle={styles.conteudoScroll} showsVerticalScrollIndicator={false}>
         <View style={[styles.painel, { width: larguraPainel }]}>
-          
+
           <View style={styles.cabecalho}>
             <Pressable style={styles.botaoVoltar} onPress={() => router.back()}>
               <Ionicons name="arrow-back" size={21} color="#ffffff" />
@@ -55,25 +60,32 @@ export default function Ingressos() {
           <View style={styles.linhaDecorativa} />
 
           {/* Como não temos a imagem do filme aqui, usamos um placeholder */}
-          <View style={styles.filmeContainer}>
-            <Image 
-              source={{ uri: 'https://via.placeholder.com/112x164/24152f/c084fc?text=Ingresso' }} 
-              style={styles.imagem} 
-              resizeMode="cover" 
-            />
-            <View style={styles.informacoesFilme}>
-              <Text style={styles.labelFilme}>VOCÊ ESCOLHEU</Text>
-              <Text style={styles.nomeFilme}>Filme #{id}</Text>
-              <View style={styles.badgeSessao}>
-                <Ionicons name="time-outline" size={16} color="#d4a0ff" />
-                <View style={styles.textoSessaoContainer}>
-                  <Text style={styles.labelSessao}>HORÁRIO DA SESSÃO</Text>
-                  <Text style={styles.textoSessao}>{sessao || 'Não informado'}</Text>
-                </View>
-              </View>
-            </View>
-          </View>
+<View style={styles.filmeContainer}>
+  <Image
+    source={{ uri: imagem }}
+    style={styles.imagem}
+    resizeMode="cover"
+  />
 
+  <View style={styles.informacoesFilme}>
+    <Text style={styles.labelFilme}>VOCÊ ESCOLHEU</Text>
+
+    <Text style={styles.nomeFilme}>
+      {nome || `Filme #${id}`}
+    </Text>
+
+    <View style={styles.badgeSessao}>
+      <Ionicons name="time-outline" size={16} color="#d4a0ff" />
+
+      <View style={styles.textoSessaoContainer}>
+        <Text style={styles.labelSessao}>HORÁRIO DA SESSÃO</Text>
+        <Text style={styles.textoSessao}>
+          {sessao || 'Não informado'}
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
           <View style={styles.divisor} />
 
           <View style={styles.secaoQuantidade}>

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Image, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions, Alert, ActivityIndicator } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useLocalSearchParams, useRouter } from 'expo-router';
-import { finalizarVenda } from '../services/api'; // 👈 Importa a API
+import { finalizarVenda } from '../services/api'; // Importa a API
 
 const CORES = { fundo: '#0b0712', painel: '#100b18', superficie: '#17101f', roxo: '#b14cff', lilas: '#d4a0ff', texto: '#ffffff', textoSecundario: '#a99bb8', borda: '#30213d' };
 
@@ -12,8 +12,14 @@ const opcoesPagamento = [
 ];
 
 export default function Pagamento() {
-  const { id, sessaoId, sessao, quantidade, preco } = useLocalSearchParams<{
-    id?: string; sessaoId?: string; sessao?: string; quantidade?: string; preco?: string;
+  const { id, nome, imagem, sessaoId, sessao, quantidade, preco } = useLocalSearchParams<{
+    id?: string;
+    nome?: string;
+    imagem?: string;
+    sessaoId?: string;
+    sessao?: string;
+    quantidade?: string;
+    preco?: string;
   }>();
 
   const router = useRouter();
@@ -25,30 +31,36 @@ export default function Pagamento() {
 
   const [formaPagamento, setFormaPagamento] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [compraConcluida, setCompraConcluida] = useState(false);
+
   const larguraPainel = Math.min(width - 32, 480);
+
 
   async function finalizarPagamento() {
     if (!formaPagamento || !sessaoId) return;
 
-    const opcaoSelecionada = opcoesPagamento.find(o => o.label === formaPagamento);
+    const opcaoSelecionada = opcoesPagamento.find(
+      o => o.label === formaPagamento
+    );
+
     if (!opcaoSelecionada) return;
 
     setIsLoading(true);
+
     try {
-      const venda = await finalizarVenda(
+      await finalizarVenda(
         Number(sessaoId),
         quantidadeIngressos,
         opcaoSelecionada.apiValue
       );
 
-      Alert.alert(
-        "Compra confirmada!",
-        `Pedido #${venda.vendaId}\nTotal: R$ ${venda.total.toFixed(2).replace('.', ',')}`,
-        [{ text: "OK", onPress: () => router.replace('/') }]
-      );
+      setCompraConcluida(true);
 
     } catch (error: any) {
-      Alert.alert("Erro", error.message || "Não foi possível realizar a compra.");
+      Alert.alert(
+        'Erro',
+        error.message || 'Não foi possível realizar a compra.'
+      );
     } finally {
       setIsLoading(false);
     }
@@ -56,9 +68,37 @@ export default function Pagamento() {
 
   return (
     <View style={styles.fundo}>
+      {compraConcluida && (
+        <View style={styles.overlayConfirmacao}>
+          <View style={styles.modalConfirmacao}>
+            <View style={styles.iconeSucesso}>
+              <Ionicons name="checkmark" size={42} color="#ffffff" />
+            </View>
+
+            <Text style={styles.tituloConfirmacao}>
+              Compra realizada!
+            </Text>
+
+            <Text style={styles.textoConfirmacao}>
+              Seus ingressos foram adquiridos com sucesso.
+              Prepare a pipoca e aproveite o filme!
+            </Text>
+
+            <Pressable
+              style={styles.botaoConfirmacao}
+              onPress={() => router.replace('/')}
+            >
+              <Text style={styles.textoBotaoConfirmacao}>
+                Voltar ao início
+              </Text>
+              <Ionicons name="arrow-forward" size={18} color="#ffffff" />
+            </Pressable>
+          </View>
+        </View>
+      )}
       <ScrollView style={styles.container} contentContainerStyle={styles.conteudo} showsVerticalScrollIndicator={false}>
         <View style={[styles.pagamento, { width: larguraPainel }]}>
-          
+
           <View style={styles.cabecalho}>
             <Pressable style={styles.botaoVoltar} onPress={() => router.back()}>
               <Ionicons name="arrow-back" size={21} color={CORES.texto} />
@@ -74,10 +114,14 @@ export default function Pagamento() {
           <Text style={styles.tituloSecao}>Resumo do pedido</Text>
 
           <View style={styles.filme}>
-            <Image source={{ uri: 'https://via.placeholder.com/96x132/24152f/c084fc?text=Ingresso' }} style={styles.imagem} resizeMode="cover" />
+            <Image
+              source={{ uri: imagem }}
+              style={styles.imagem}
+              resizeMode="cover"
+            />
             <View style={styles.informacoesFilme}>
               <Text style={styles.rotuloPequeno}>SEU FILME</Text>
-              <Text style={styles.nomeFilme}>Filme #{id}</Text>
+              <Text style={styles.nomeFilme}>{nome || `Filme #${id}`}</Text>
               <View style={styles.informacaoLinha}>
                 <Ionicons name="time-outline" size={15} color={CORES.lilas} />
                 <Text style={styles.textoInformacao}>{sessao}</Text>
@@ -192,4 +236,71 @@ const styles = StyleSheet.create({
   botaoPagar: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 10, backgroundColor: CORES.lilas, borderRadius: 13, paddingVertical: 15, paddingHorizontal: 18, marginTop: 22 },
   botaoDesabilitado: { opacity: 0.4 },
   textoBotaoPagar: { color: CORES.fundo, fontSize: 15, fontWeight: '800' },
+  overlayConfirmacao: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.82)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+    zIndex: 999,
+  },
+
+  modalConfirmacao: {
+    width: '100%',
+    maxWidth: 380,
+    backgroundColor: '#17101f',
+    borderWidth: 1,
+    borderColor: '#49305e',
+    borderRadius: 22,
+    padding: 28,
+    alignItems: 'center',
+  },
+
+  iconeSucesso: {
+    width: 76,
+    height: 76,
+    borderRadius: 40,
+    backgroundColor: '#9b3df5',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+
+  tituloConfirmacao: {
+    color: '#ffffff',
+    fontSize: 23,
+    fontWeight: '800',
+    textAlign: 'center',
+    marginBottom: 12,
+  },
+
+  textoConfirmacao: {
+    color: '#a99bb8',
+    fontSize: 14,
+    lineHeight: 22,
+    textAlign: 'center',
+    marginBottom: 25,
+  },
+
+  botaoConfirmacao: {
+    width: '100%',
+    backgroundColor: '#9b3df5',
+    borderRadius: 12,
+    paddingVertical: 15,
+    paddingHorizontal: 16,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 10,
+  },
+
+  textoBotaoConfirmacao: {
+    color: '#ffffff',
+    fontSize: 14,
+    fontWeight: '800',
+  },
 });
